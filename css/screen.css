@@ -215,6 +215,11 @@ a:focus {
         padding-right: 48px;
     }
 
+    .o-row--md {
+        padding-top: 48px;
+        padding-bottom: 24px;
+    }
+
     .o-row--lg {
         padding-top: 72px;
         padding-bottom: 48px;
