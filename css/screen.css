@@ -198,6 +198,10 @@ a:focus {
     background: #F7F7F7;
 }
 
+.o-row--gradient {
+    background: linear-gradient(to top right, green,blue);
+}
+
 /* size modifiers */
 
 .o-row--lg {
@@ -386,11 +390,9 @@ a:focus {
     color: #7373F5;
 }
 
-.c-link-cta::after {
-    content: "and more";
-}
 
-.c-link-cta::before {
+
+.c-link-cta::after {
     content: "";
     display: block;
     position: abolute;
@@ -403,16 +405,28 @@ a:focus {
     transform-origin: left;
     transition-property: transform background-color;
     transition-duration: .175s;
-    transition-timing-function: ease-in;
+    transition-timing-function: ease;
 }
 
 .c-link-cta:hover {
-    color: #3E3EA8;
+    color: red;
 }
 
 .c-link-cta:hover::after {
     transform: scaleX(1);
-    background-color: #3e3ea8;
+    background-color: greenyellow;
+}
+
+.c-link-cta-inverse,
+.c-link-cta-inverse:visited,
+.c-link-cta-inverse:active {
+    color: #fff;
+}
+.c-link-cta-inverse:after {
+    background-color:#fff;
+}
+.c-link-cta-inverse:hover::after {
+    background-color: #fff;
 }
 
 /*
