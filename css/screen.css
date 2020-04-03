@@ -517,6 +517,51 @@ a:focus {
 }
 
 /*
+    Component: footer
+    ---
+    Main footer of the website
+*/
+
+.c-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-footer__logo {
+}
+
+.c-footer__nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .c-footer {
+    }
+
+    .c-footer__logo {
+        height: 40px;
+    }
+
+    .c-footer__nav {
+    }
+}
+
+@media (min-width: 992px) {
+    .c-footer {
+    }
+
+    .c-footer__logo {
+    }
+
+    .c-footer__logo .c-logo {
+    }
+
+    .c-footer__nav {
+    }
+}
+
+
+/*
     Component: Lead
     ---
     Lead type treatments to style everything that differs from standard typography elements
@@ -590,6 +635,28 @@ a:focus {
     }
 }
 
+/*
+    Component: Title icon
+    ---
+    Special type of title with icon
+*/
+
+.c-title-icon {
+    height: 40px;
+    width: 40px;
+}
+
+.c-title-icon__icon {
+    height: 36px;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1200px) {
+}
+
 
 /*------------------------------------*\
   #UTILITIES
@@ -604,6 +671,9 @@ a:focus {
 
     padding-top: 0 !important;
 
+}
+.u-width-auto {
+    width:auto !important;
 }
 /*
     Utilities: color
@@ -658,7 +728,11 @@ a:focus {
     Utility classes to put specific flex properties onto elements
     Will be mostly used on o-layout__item
 */
-
+.o-layout__item{
+    width:100%;
+    flex-basis: auto;
+    padding-right: 24px;
+}
 .u-flex-basis-auto {
     flex-basis: auto !important;
 }
