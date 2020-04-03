@@ -642,13 +642,14 @@ a:focus {
 */
 
 .c-title-icon {
-    height: 40px;
-    width: 40px;
+    height: 96px;
+    width: 96px;
+    
 }
 
 .c-title-icon__icon {
-    height: 36px;
-    height: 100%;
+    width: 96px;
+    height: 96px;
 }
 
 @media (min-width: 768px) {
